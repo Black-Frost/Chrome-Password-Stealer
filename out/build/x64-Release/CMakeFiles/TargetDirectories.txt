@@ -1,0 +1,5 @@
+D:/cookieVS/out/build/x64-Release/CMakeFiles/edit_cache.dir
+D:/cookieVS/out/build/x64-Release/CMakeFiles/rebuild_cache.dir
+D:/cookieVS/out/build/x64-Release/cookieVS/CMakeFiles/testexe.dir
+D:/cookieVS/out/build/x64-Release/cookieVS/CMakeFiles/edit_cache.dir
+D:/cookieVS/out/build/x64-Release/cookieVS/CMakeFiles/rebuild_cache.dir

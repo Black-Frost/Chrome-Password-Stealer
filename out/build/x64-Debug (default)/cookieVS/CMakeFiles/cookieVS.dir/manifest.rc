@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "D:/cookieVS/out/build/x64-Debug (default)/cookieVS/CMakeFiles/cookieVS.dir/embed.manifest"
