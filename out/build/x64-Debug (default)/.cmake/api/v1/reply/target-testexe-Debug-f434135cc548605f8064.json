@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "cookieVS/testexe.exe"
+			"path" : "Password_stealer/testexe.exe"
 		},
 		{
-			"path" : "cookieVS/testexe.pdb"
+			"path" : "Password_stealer/testexe.pdb"
 		}
 	],
 	"backtrace" : 2,
@@ -20,7 +20,7 @@
 		"files" : 
 		[
 			"D:/vcpkg/scripts/buildsystems/vcpkg.cmake",
-			"cookieVS/CMakeLists.txt"
+			"Password_stealer/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -101,11 +101,12 @@
 			"sourceIndexes" : 
 			[
 				1,
-				3
+				3,
+				5
 			]
 		}
 	],
-	"id" : "testexe::@b51d2e3b14682baebf26",
+	"id" : "testexe::@476fadeafd0af3027d9e",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -172,8 +173,8 @@
 	"nameOnDisk" : "testexe.exe",
 	"paths" : 
 	{
-		"build" : "cookieVS",
-		"source" : "cookieVS"
+		"build" : "Password_stealer",
+		"source" : "Password_stealer"
 	},
 	"sourceGroups" : 
 	[
@@ -183,7 +184,8 @@
 			[
 				0,
 				2,
-				4
+				4,
+				6
 			]
 		},
 		{
@@ -191,14 +193,15 @@
 			"sourceIndexes" : 
 			[
 				1,
-				3
+				3,
+				5
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				5
+				7
 			]
 		}
 	],
@@ -206,29 +209,40 @@
 	[
 		{
 			"backtrace" : 2,
-			"path" : "cookieVS/base64.h",
+			"path" : "Password_stealer/base64.h",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "cookieVS/Dumper.cpp",
+			"path" : "Password_stealer/Dumper.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 2,
-			"path" : "cookieVS/Dumper.h",
+			"path" : "Password_stealer/Dumper.h",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "cookieVS/GetPassword.cpp",
+			"path" : "Password_stealer/Main.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 2,
-			"path" : "cookieVS/GetPassword.h",
+			"path" : "Password_stealer/Main.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Password_stealer/Sender.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "Password_stealer/Sender.h",
 			"sourceGroupIndex" : 0
 		},
 		{

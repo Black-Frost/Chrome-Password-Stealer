@@ -2,8 +2,8 @@
 # and include sub-projects here.
 #
 cmake_minimum_required (VERSION 3.11)
-project ("cookieVS")
+project ("Password_stealer")
 
 # Include sub-projects.
 #add_library(json)
-add_subdirectory ("cookieVS")
+add_subdirectory ("Password_stealer")
