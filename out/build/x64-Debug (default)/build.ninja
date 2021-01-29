@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: cookieVS
+# Project: Password_stealer
 # Configurations: Debug
 # =============================================================================
 
@@ -39,7 +39,7 @@ include CMakeFiles\rules.ninja
 # Utility command for edit_cache
 
 build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\cookieVS\out\build\x64-Debug (default)" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "D:\Password_stealer\out\build\x64-Debug (default)" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -50,7 +50,7 @@ build edit_cache: phony CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\cookieVS\out\build\x64-Debug (default)" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\cookieVS -B"D:\cookieVS\out\build\x64-Debug (default)""
+  COMMAND = cmd.exe /C "cd /D "D:\Password_stealer\out\build\x64-Debug (default)" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\Password_stealer -B"D:\Password_stealer\out\build\x64-Debug (default)""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -59,7 +59,7 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/cookieVS/CMakeLists.txt
+# D:/Password_stealer/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -69,25 +69,34 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 #############################################
 # Order-only phony target for testexe
 
-build cmake_object_order_depends_target_testexe: phony || cookieVS\CMakeFiles\testexe.dir
+build cmake_object_order_depends_target_testexe: phony || Password_stealer\CMakeFiles\testexe.dir
 
-build cookieVS\CMakeFiles\testexe.dir\Dumper.cpp.obj: CXX_COMPILER__testexe_Debug ..\..\..\cookieVS\Dumper.cpp || cmake_object_order_depends_target_testexe
+build Password_stealer\CMakeFiles\testexe.dir\Dumper.cpp.obj: CXX_COMPILER__testexe_Debug ..\..\..\Password_stealer\Dumper.cpp || cmake_object_order_depends_target_testexe
   DEFINES = -DJSON_USE_IMPLICIT_CONVERSIONS=1 -D_WIN32_WINNT=0x0A00
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FIwinapifamily.h
   INCLUDES = -ID:\vcpkg\installed\x64-windows\include
-  OBJECT_DIR = cookieVS\CMakeFiles\testexe.dir
-  OBJECT_FILE_DIR = cookieVS\CMakeFiles\testexe.dir
-  TARGET_COMPILE_PDB = cookieVS\CMakeFiles\testexe.dir\
-  TARGET_PDB = cookieVS\testexe.pdb
+  OBJECT_DIR = Password_stealer\CMakeFiles\testexe.dir
+  OBJECT_FILE_DIR = Password_stealer\CMakeFiles\testexe.dir
+  TARGET_COMPILE_PDB = Password_stealer\CMakeFiles\testexe.dir\
+  TARGET_PDB = Password_stealer\testexe.pdb
 
-build cookieVS\CMakeFiles\testexe.dir\GetPassword.cpp.obj: CXX_COMPILER__testexe_Debug ..\..\..\cookieVS\GetPassword.cpp || cmake_object_order_depends_target_testexe
+build Password_stealer\CMakeFiles\testexe.dir\Main.cpp.obj: CXX_COMPILER__testexe_Debug ..\..\..\Password_stealer\Main.cpp || cmake_object_order_depends_target_testexe
   DEFINES = -DJSON_USE_IMPLICIT_CONVERSIONS=1 -D_WIN32_WINNT=0x0A00
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FIwinapifamily.h
   INCLUDES = -ID:\vcpkg\installed\x64-windows\include
-  OBJECT_DIR = cookieVS\CMakeFiles\testexe.dir
-  OBJECT_FILE_DIR = cookieVS\CMakeFiles\testexe.dir
-  TARGET_COMPILE_PDB = cookieVS\CMakeFiles\testexe.dir\
-  TARGET_PDB = cookieVS\testexe.pdb
+  OBJECT_DIR = Password_stealer\CMakeFiles\testexe.dir
+  OBJECT_FILE_DIR = Password_stealer\CMakeFiles\testexe.dir
+  TARGET_COMPILE_PDB = Password_stealer\CMakeFiles\testexe.dir\
+  TARGET_PDB = Password_stealer\testexe.pdb
+
+build Password_stealer\CMakeFiles\testexe.dir\Sender.cpp.obj: CXX_COMPILER__testexe_Debug ..\..\..\Password_stealer\Sender.cpp || cmake_object_order_depends_target_testexe
+  DEFINES = -DJSON_USE_IMPLICIT_CONVERSIONS=1 -D_WIN32_WINNT=0x0A00
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FIwinapifamily.h
+  INCLUDES = -ID:\vcpkg\installed\x64-windows\include
+  OBJECT_DIR = Password_stealer\CMakeFiles\testexe.dir
+  OBJECT_FILE_DIR = Password_stealer\CMakeFiles\testexe.dir
+  TARGET_COMPILE_PDB = Password_stealer\CMakeFiles\testexe.dir\
+  TARGET_PDB = Password_stealer\testexe.pdb
 
 
 # =============================================================================
@@ -95,49 +104,49 @@ build cookieVS\CMakeFiles\testexe.dir\GetPassword.cpp.obj: CXX_COMPILER__testexe
 
 
 #############################################
-# Link the executable cookieVS\testexe.exe
+# Link the executable Password_stealer\testexe.exe
 
-build cookieVS\testexe.exe: CXX_EXECUTABLE_LINKER__testexe_Debug cookieVS\CMakeFiles\testexe.dir\Dumper.cpp.obj cookieVS\CMakeFiles\testexe.dir\GetPassword.cpp.obj | D$:\vcpkg\installed\x64-windows\debug\lib\sqlite3.lib D$:\vcpkg\installed\x64-windows\debug\lib\cryptopp-static.lib D$:\vcpkg\installed\x64-windows\debug\lib\curlpp.lib D$:\vcpkg\installed\x64-windows\debug\lib\libcurl-d.lib D$:\vcpkg\installed\x64-windows\debug\lib\zlibd.lib
+build Password_stealer\testexe.exe: CXX_EXECUTABLE_LINKER__testexe_Debug Password_stealer\CMakeFiles\testexe.dir\Dumper.cpp.obj Password_stealer\CMakeFiles\testexe.dir\Main.cpp.obj Password_stealer\CMakeFiles\testexe.dir\Sender.cpp.obj | D$:\vcpkg\installed\x64-windows\debug\lib\sqlite3.lib D$:\vcpkg\installed\x64-windows\debug\lib\cryptopp-static.lib D$:\vcpkg\installed\x64-windows\debug\lib\curlpp.lib D$:\vcpkg\installed\x64-windows\debug\lib\libcurl-d.lib D$:\vcpkg\installed\x64-windows\debug\lib\zlibd.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:windows
   LINK_LIBRARIES = D:\vcpkg\installed\x64-windows\debug\lib\sqlite3.lib  D:\vcpkg\installed\x64-windows\debug\lib\cryptopp-static.lib  D:\vcpkg\installed\x64-windows\debug\lib\curlpp.lib  D:\vcpkg\installed\x64-windows\debug\lib\libcurl-d.lib  wldap32.lib  winmm.lib  ws2_32.lib  advapi32.lib  crypt32.lib  D:\vcpkg\installed\x64-windows\debug\lib\zlibd.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = cookieVS\CMakeFiles\testexe.dir
-  POST_BUILD = cmd.exe /C "cd /D "D:\cookieVS\out\build\x64-Debug (default)\cookieVS" && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file D:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "D:/cookieVS/out/build/x64-Debug (default)/cookieVS/testexe.exe" -installedDir D:/vcpkg/installed/x64-windows/debug/bin -OutVariable out"
+  OBJECT_DIR = Password_stealer\CMakeFiles\testexe.dir
+  POST_BUILD = cmd.exe /C "cd /D "D:\Password_stealer\out\build\x64-Debug (default)\Password_stealer" && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file D:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "D:/Password_stealer/out/build/x64-Debug (default)/Password_stealer/testexe.exe" -installedDir D:/vcpkg/installed/x64-windows/debug/bin -OutVariable out"
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = cookieVS\CMakeFiles\testexe.dir\
-  TARGET_FILE = cookieVS\testexe.exe
-  TARGET_IMPLIB = cookieVS\testexe.lib
-  TARGET_PDB = cookieVS\testexe.pdb
+  TARGET_COMPILE_PDB = Password_stealer\CMakeFiles\testexe.dir\
+  TARGET_FILE = Password_stealer\testexe.exe
+  TARGET_IMPLIB = Password_stealer\testexe.lib
+  TARGET_PDB = Password_stealer\testexe.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
-build cookieVS\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\cookieVS\out\build\x64-Debug (default)\cookieVS" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build Password_stealer\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "D:\Password_stealer\out\build\x64-Debug (default)\Password_stealer" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build cookieVS\edit_cache: phony cookieVS\CMakeFiles\edit_cache.util
+build Password_stealer\edit_cache: phony Password_stealer\CMakeFiles\edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build cookieVS\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\cookieVS\out\build\x64-Debug (default)\cookieVS" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\cookieVS -B"D:\cookieVS\out\build\x64-Debug (default)""
+build Password_stealer\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "D:\Password_stealer\out\build\x64-Debug (default)\Password_stealer" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\Password_stealer -B"D:\Password_stealer\out\build\x64-Debug (default)""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build cookieVS\rebuild_cache: phony cookieVS\CMakeFiles\rebuild_cache.util
+build Password_stealer\rebuild_cache: phony Password_stealer\CMakeFiles\rebuild_cache.util
 
 # =============================================================================
 # Target aliases.
 
-build testexe: phony cookieVS\testexe.exe
+build testexe: phony Password_stealer\testexe.exe
 
-build testexe.exe: phony cookieVS\testexe.exe
+build testexe.exe: phony Password_stealer\testexe.exe
 
 # =============================================================================
 # Folder targets.
@@ -145,16 +154,16 @@ build testexe.exe: phony cookieVS\testexe.exe
 # =============================================================================
 
 #############################################
-# Folder: D:/cookieVS/out/build/x64-Debug (default)
+# Folder: D:/Password_stealer/out/build/x64-Debug (default)
 
-build all: phony cookieVS\all
+build all: phony Password_stealer\all
 
 # =============================================================================
 
 #############################################
-# Folder: D:/cookieVS/out/build/x64-Debug (default)/cookieVS
+# Folder: D:/Password_stealer/out/build/x64-Debug (default)/Password_stealer
 
-build cookieVS\all: phony cookieVS\testexe.exe
+build Password_stealer\all: phony Password_stealer\testexe.exe
 
 # =============================================================================
 # Built-in targets
@@ -163,14 +172,14 @@ build cookieVS\all: phony cookieVS\testexe.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\cookieVS\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeDependentOption.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeFindDependencyMacro.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindZLIB.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\SelectLibraryConfigurations.cmake CMakeCache.txt CMakeFiles\3.18.20081302-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeSystem.cmake D$:\vcpkg\installed\x64-windows\share\cryptopp\cryptopp-config-version.cmake D$:\vcpkg\installed\x64-windows\share\cryptopp\cryptopp-config.cmake D$:\vcpkg\installed\x64-windows\share\cryptopp\cryptopp-targets-debug.cmake D$:\vcpkg\installed\x64-windows\share\cryptopp\cryptopp-targets-release.cmake D$:\vcpkg\installed\x64-windows\share\cryptopp\cryptopp-targets.cmake D$:\vcpkg\installed\x64-windows\share\curl\CURLConfig.cmake D$:\vcpkg\installed\x64-windows\share\curl\CURLConfigVersion.cmake D$:\vcpkg\installed\x64-windows\share\curl\CURLTargets-debug.cmake D$:\vcpkg\installed\x64-windows\share\curl\CURLTargets-release.cmake D$:\vcpkg\installed\x64-windows\share\curl\CURLTargets.cmake D$:\vcpkg\installed\x64-windows\share\curl\vcpkg-cmake-wrapper.cmake D$:\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonConfig.cmake D$:\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonConfigVersion.cmake D$:\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonTargets.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-curlpp\unofficial-curlpp-config-debug.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-curlpp\unofficial-curlpp-config-release.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-curlpp\unofficial-curlpp-config.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-curlpp\vcpkg-cmake-wrapper.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-config.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-debug.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-release.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets.cmake D$:\vcpkg\scripts\buildsystems\vcpkg.cmake
+build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\Password_stealer\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeDependentOption.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeFindDependencyMacro.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindZLIB.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\SelectLibraryConfigurations.cmake CMakeCache.txt CMakeFiles\3.18.20081302-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeSystem.cmake D$:\vcpkg\installed\x64-windows\share\cryptopp\cryptopp-config-version.cmake D$:\vcpkg\installed\x64-windows\share\cryptopp\cryptopp-config.cmake D$:\vcpkg\installed\x64-windows\share\cryptopp\cryptopp-targets-debug.cmake D$:\vcpkg\installed\x64-windows\share\cryptopp\cryptopp-targets-release.cmake D$:\vcpkg\installed\x64-windows\share\cryptopp\cryptopp-targets.cmake D$:\vcpkg\installed\x64-windows\share\curl\CURLConfig.cmake D$:\vcpkg\installed\x64-windows\share\curl\CURLConfigVersion.cmake D$:\vcpkg\installed\x64-windows\share\curl\CURLTargets-debug.cmake D$:\vcpkg\installed\x64-windows\share\curl\CURLTargets-release.cmake D$:\vcpkg\installed\x64-windows\share\curl\CURLTargets.cmake D$:\vcpkg\installed\x64-windows\share\curl\vcpkg-cmake-wrapper.cmake D$:\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonConfig.cmake D$:\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonConfigVersion.cmake D$:\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonTargets.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-curlpp\unofficial-curlpp-config-debug.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-curlpp\unofficial-curlpp-config-release.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-curlpp\unofficial-curlpp-config.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-curlpp\vcpkg-cmake-wrapper.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-config.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-debug.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-release.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets.cmake D$:\vcpkg\scripts\buildsystems\vcpkg.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ..\..\..\CMakeLists.txt ..\..\..\cookieVS\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeDependentOption.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeFindDependencyMacro.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindZLIB.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\SelectLibraryConfigurations.cmake CMakeCache.txt CMakeFiles\3.18.20081302-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeSystem.cmake D$:\vcpkg\installed\x64-windows\share\cryptopp\cryptopp-config-version.cmake D$:\vcpkg\installed\x64-windows\share\cryptopp\cryptopp-config.cmake D$:\vcpkg\installed\x64-windows\share\cryptopp\cryptopp-targets-debug.cmake D$:\vcpkg\installed\x64-windows\share\cryptopp\cryptopp-targets-release.cmake D$:\vcpkg\installed\x64-windows\share\cryptopp\cryptopp-targets.cmake D$:\vcpkg\installed\x64-windows\share\curl\CURLConfig.cmake D$:\vcpkg\installed\x64-windows\share\curl\CURLConfigVersion.cmake D$:\vcpkg\installed\x64-windows\share\curl\CURLTargets-debug.cmake D$:\vcpkg\installed\x64-windows\share\curl\CURLTargets-release.cmake D$:\vcpkg\installed\x64-windows\share\curl\CURLTargets.cmake D$:\vcpkg\installed\x64-windows\share\curl\vcpkg-cmake-wrapper.cmake D$:\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonConfig.cmake D$:\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonConfigVersion.cmake D$:\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonTargets.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-curlpp\unofficial-curlpp-config-debug.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-curlpp\unofficial-curlpp-config-release.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-curlpp\unofficial-curlpp-config.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-curlpp\vcpkg-cmake-wrapper.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-config.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-debug.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-release.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets.cmake D$:\vcpkg\scripts\buildsystems\vcpkg.cmake: phony
+build ..\..\..\CMakeLists.txt ..\..\..\Password_stealer\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeDependentOption.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeFindDependencyMacro.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindZLIB.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\SelectLibraryConfigurations.cmake CMakeCache.txt CMakeFiles\3.18.20081302-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeSystem.cmake D$:\vcpkg\installed\x64-windows\share\cryptopp\cryptopp-config-version.cmake D$:\vcpkg\installed\x64-windows\share\cryptopp\cryptopp-config.cmake D$:\vcpkg\installed\x64-windows\share\cryptopp\cryptopp-targets-debug.cmake D$:\vcpkg\installed\x64-windows\share\cryptopp\cryptopp-targets-release.cmake D$:\vcpkg\installed\x64-windows\share\cryptopp\cryptopp-targets.cmake D$:\vcpkg\installed\x64-windows\share\curl\CURLConfig.cmake D$:\vcpkg\installed\x64-windows\share\curl\CURLConfigVersion.cmake D$:\vcpkg\installed\x64-windows\share\curl\CURLTargets-debug.cmake D$:\vcpkg\installed\x64-windows\share\curl\CURLTargets-release.cmake D$:\vcpkg\installed\x64-windows\share\curl\CURLTargets.cmake D$:\vcpkg\installed\x64-windows\share\curl\vcpkg-cmake-wrapper.cmake D$:\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonConfig.cmake D$:\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonConfigVersion.cmake D$:\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonTargets.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-curlpp\unofficial-curlpp-config-debug.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-curlpp\unofficial-curlpp-config-release.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-curlpp\unofficial-curlpp-config.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-curlpp\vcpkg-cmake-wrapper.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-config.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-debug.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-release.cmake D$:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets.cmake D$:\vcpkg\scripts\buildsystems\vcpkg.cmake: phony
 
 
 #############################################
