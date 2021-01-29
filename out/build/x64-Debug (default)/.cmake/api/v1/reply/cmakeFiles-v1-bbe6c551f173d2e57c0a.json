@@ -130,7 +130,7 @@
 			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.18/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
-			"path" : "Password_stealer/CMakeLists.txt"
+			"path" : "cookieVS/CMakeLists.txt"
 		},
 		{
 			"isExternal" : true,
@@ -269,8 +269,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "D:/Password_stealer/out/build/x64-Debug (default)",
-		"source" : "D:/Password_stealer"
+		"build" : "D:/cookieVS/out/build/x64-Debug (default)",
+		"source" : "D:/cookieVS"
 	},
 	"version" : 
 	{

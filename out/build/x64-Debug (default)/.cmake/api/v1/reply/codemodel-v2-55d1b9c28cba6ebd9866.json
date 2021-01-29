@@ -18,14 +18,14 @@
 					"source" : "."
 				},
 				{
-					"build" : "Password_stealer",
+					"build" : "cookieVS",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.11"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
-					"source" : "Password_stealer",
+					"source" : "cookieVS",
 					"targetIndexes" : 
 					[
 						0
@@ -41,7 +41,7 @@
 						0,
 						1
 					],
-					"name" : "Password_stealer",
+					"name" : "cookieVS",
 					"targetIndexes" : 
 					[
 						0
@@ -52,8 +52,8 @@
 			[
 				{
 					"directoryIndex" : 1,
-					"id" : "testexe::@476fadeafd0af3027d9e",
-					"jsonFile" : "target-testexe-Debug-f434135cc548605f8064.json",
+					"id" : "testexe::@b51d2e3b14682baebf26",
+					"jsonFile" : "target-testexe-Debug-9200f8a265a0a6cd5d3b.json",
 					"name" : "testexe",
 					"projectIndex" : 0
 				}
@@ -63,8 +63,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Password_stealer/out/build/x64-Debug (default)",
-		"source" : "D:/Password_stealer"
+		"build" : "D:/cookieVS/out/build/x64-Debug (default)",
+		"source" : "D:/cookieVS"
 	},
 	"version" : 
 	{

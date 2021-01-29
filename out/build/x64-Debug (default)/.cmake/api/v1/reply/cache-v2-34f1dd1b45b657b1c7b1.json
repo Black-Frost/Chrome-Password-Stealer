@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/Password_stealer/out/build/x64-Debug (default)"
+			"value" : "d:/cookieVS/out/build/x64-Debug (default)"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -511,7 +511,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Password_stealer"
+			"value" : "D:/cookieVS"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -523,7 +523,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/Password_stealer/out/install/x64-Debug (default)"
+			"value" : "D:/cookieVS/out/install/x64-Debug (default)"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -707,7 +707,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Password_stealer"
+			"value" : "cookieVS"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER",
@@ -1054,6 +1054,18 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "CPP_BASE64_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "D:/vcpkg/installed/x64-windows/include"
+		},
+		{
 			"name" : "CURL_DIR",
 			"properties" : 
 			[
@@ -1098,6 +1110,54 @@
 			"value" : ""
 		},
 		{
+			"name" : "FETCHCONTENT_BASE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Directory under which to collect all populated content"
+				}
+			],
+			"type" : "PATH",
+			"value" : "D:/cookieVS/out/build/x64-Debug (default)/_deps"
+		},
+		{
+			"name" : "FETCHCONTENT_FULLY_DISCONNECTED",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Disables all attempts to download or update content and assumes source dirs already exist"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
+		},
+		{
+			"name" : "FETCHCONTENT_QUIET",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Enables QUIET option for all content population"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "ON"
+		},
+		{
+			"name" : "FETCHCONTENT_UPDATES_DISCONNECTED",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Enables UPDATE_DISCONNECTED behavior for all content population"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
+		},
+		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_ZLIB",
 			"properties" : 
 			[
@@ -1120,30 +1180,6 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "[D:/vcpkg/installed/x64-windows/share/nlohmann_json/nlohmann_jsonConfig.cmake][v3.9.1()]"
-		},
-		{
-			"name" : "Password_stealer_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "D:/Password_stealer/out/build/x64-Debug (default)"
-		},
-		{
-			"name" : "Password_stealer_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "D:/Password_stealer"
 		},
 		{
 			"name" : "VCPKG_APPLOCAL_DEPS",
@@ -1352,6 +1388,30 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "D:/vcpkg"
+		},
+		{
+			"name" : "cookieVS_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "D:/cookieVS/out/build/x64-Debug (default)"
+		},
+		{
+			"name" : "cookieVS_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "D:/cookieVS"
 		},
 		{
 			"name" : "cryptopp_DIR",
