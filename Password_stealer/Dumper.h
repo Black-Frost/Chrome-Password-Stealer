@@ -15,7 +15,6 @@
 #include <cryptopp/modes.h>
 #include <cryptopp/gcm.h>
 #include<cryptopp/filters.h>
-#include <assert.h> 
 #pragma comment(lib, "Crypt32")
 // TODO: Reference additional headers your program requires here.
 using namespace std;
@@ -30,11 +29,19 @@ private:
 	static string masterKey;
 
 	static string decryptPassword(BYTE* txt);
+
+	//callback function for sql_exec
+	//save the password to a new database file
 	static int handlePasswords(void* notUsed, int argc, char** argv, char** azColName);
+
+	//read the passwords from Chrome database file
 	static string readPasswords();
+
+	//get the master key for the AES decryption of the passwords
 	static void getMasterKey();
 
 public:
+	//decrypt and dump all the passwords to a new sqlite database file
 	static string dumpPassword();
 
 };

@@ -99,7 +99,7 @@ string Dumper::readPasswords()
 		exit(sqlite3_errcode(db));
 	}
 
-	query = "SELECT origin_url, username_value, password_value FROM logins LIMIT 3";
+	query = "SELECT origin_url, username_value, password_value FROM logins";
 	if (sqlite3_exec(db, query.c_str(), Dumper::handlePasswords, outdb, &error) != SQLITE_OK)
 	{
 		cout << "SQLITE3 error: " << error << endl;

